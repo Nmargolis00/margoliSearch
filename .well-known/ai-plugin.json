@@ -1,0 +1,17 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "margoliSearch",
+    "name_for_model": "Search",
+    "description_for_human": "Search through local files, manipulate and summarize data",
+    "description_for_model": "Search through local files, manipulate and summarize data",
+    "auth": {
+        "type": "none"
+    },
+    "api": {
+        "type": "openapi",
+        "url": "http://localhost:3333/openapi.yaml"
+    },
+    "logo_url": "http://localhost:3333/logo.png",
+    "contact_email": "nate.margolis@boatechnology.com",
+    "legal_info_url": "http://www.example.com/legal"
+}

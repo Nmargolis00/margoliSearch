@@ -1,0 +1,32 @@
+openapi: 3.0.1
+info:
+  title: margoliSearch
+  description: Search through local files, manipulate and summarize data
+  version: 'v1'
+
+
+//   UPDATE BELOW
+servers:
+  - url: http://localhost:3333
+paths:
+  /todos:
+    get:
+      operationId: getTodos
+      summary: Get the list of todos
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/getTodosResponse'
+components:
+  schemas:
+    getTodosResponse:
+      type: object
+      properties:
+        todos:
+          type: array
+          items:
+            type: string
+          description: The list of todos.
